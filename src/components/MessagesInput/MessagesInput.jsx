@@ -4,7 +4,6 @@ import { GlobalContext } from "../../context/GlobalState";
 
 export const MessagesInput = () => {
   const [textMessage, setTextMessage] = useState("");
-
   const { messages, addMessage } = useContext(GlobalContext);
 
   const handleSubmit = event => {
@@ -18,12 +17,12 @@ export const MessagesInput = () => {
 
   return (
     <form onSubmit={handleSubmit} className="input-container">
-      <textarea
-        rows="3"
+      <input
         placeholder="Type a message"
         type="text"
         className="input-textarea"
         onChange={e => setTextMessage(e.target.value)}
+        required={true}
       />
       <button className="input-button">Send</button>
     </form>
