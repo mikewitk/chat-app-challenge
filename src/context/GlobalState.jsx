@@ -61,10 +61,18 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
+  const addMessage = messageInfo => {
+    return dispatch({
+      type: "ADD_MESSAGE",
+      payload: messageInfo
+    });
+  };
+
   return (
     <GlobalContext.Provider
       value={{
-        messages: state.messages
+        messages: state.messages,
+        addMessage
       }}
     >
       {children}
