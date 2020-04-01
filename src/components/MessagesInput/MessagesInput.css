@@ -1,0 +1,26 @@
+.input-container {
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ecebeb;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.input-button {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #6161f3;
+  margin: 10px 10px 10px 5px;
+}
+
+.input-textarea {
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5px 10px 10px;
+}

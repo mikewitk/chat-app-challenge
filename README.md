@@ -2,9 +2,9 @@
 
 ## How to Run
 
-- In the folder, run :
+In the folder, run :
 
-* `npm start`
+- `npm start`
 
 ## Requirements
 
